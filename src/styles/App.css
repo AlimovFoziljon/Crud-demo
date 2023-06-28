@@ -1,0 +1,138 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.limit-btns{
+    display: flex;
+    gap: 10px;
+}
+
+.wrapper-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.wrapper-item{
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post-funcs{
+    display: flex;
+    gap: 10px;
+}
+
+.comments{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.comment{
+    background-color: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.new-sort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sort{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort select{
+    padding: 10px 20px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: #1976d2;
+    border: none;
+    color: #fff;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.sort select:hover{
+    opacity: 0.8;
+}
+
+.add-post form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.add-post form input{
+    background-color: #1976d2;
+}
+
+.edit-input{
+    background-color: #ed6c02;
+    margin: 0 10px 0 0;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.active-link{
+    color: #1976d2;
+}
+
+@media (max-width: 480px) {
+    .sort{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper-item{
+        width: 350px;
+    }
+}
